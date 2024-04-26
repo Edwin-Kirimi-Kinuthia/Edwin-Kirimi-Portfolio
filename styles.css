@@ -1,0 +1,303 @@
+body {
+    background-color: rgb(201, 201, 241);
+    font-family: "Oxygen", sans-serif;
+    font-size: 16px;
+}
+
+#header-nav {
+    background-color: white;
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    width: 150 px;
+    height: 150 px;
+    margin: 10px 15px 10px 0px;
+}
+
+.navbar-brand {
+    padding-top: 25px;
+    width: fit-content;
+}
+
+.navbar-brand h1 {
+    font-family: "Lora", serif;
+    font-size: 1.5em;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px #222;
+    margin: auto;
+    line-height: .75;
+}
+
+.profession {
+    font-size: 0.75em;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#nav-list {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#nav-list a {
+    color: rgb(115, 115, 243);
+    text-align: center;
+}
+
+#nav-list a:hover {
+    background: #e7e7e7;
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+#nav-contacts {
+    margin-right: 20px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px rgb(115, 155, 243);
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    float: right;
+    margin-top: 10px;
+}
+
+#collapsable-nav a {
+    font-size: 1.2em;
+}
+
+#collapsable-nav a span {
+    font-size: 1em;
+}
+
+/* Adjust dropdown menu positioning */
+@media (max-width: 767px) {
+    #collapsable-nav {
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: white;
+        border: 1px solid rgb(115, 155, 243);
+        width: 100%;
+        margin-top: -1px;
+        z-index: 1000;
+    }
+
+    #collapsable-nav li {
+        width: 100%;
+        text-align: center;
+    }
+}
+.about-me {
+    padding: 40px 0;
+}
+
+.about-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    border-left: 4px solid #333;
+    padding-left: 15px;
+}
+
+blockquote footer {
+    font-size: 0.9em;
+    margin-top: 10px;
+}
+.what-i-do h2 {
+    font-family: "Lora", serif;
+    font-size: 1.5em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.what-i-do p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+/* Style for new sections */
+.career-goals,
+.personal-attributes,
+.resume-cv,
+.portfolio,
+.skills,
+.blog-articles,
+.testimonials,
+.contact,
+.cta {
+    padding: 40px 0;
+}
+
+.career-goals h2,
+.personal-attributes h2,
+.resume-cv h2,
+.portfolio h2,
+.skills h2,
+.blog-articles h2,
+.testimonials h2,
+.contact h2,
+.cta h2 {
+    font-family: "Lora", serif;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.career-goals p,
+.personal-attributes p,
+.resume-cv p,
+.portfolio p,
+.skills p,
+.blog-articles p,
+.testimonials p,
+.contact p,
+.cta p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.portfolio ul {
+    padding-left: 0;
+}
+
+.portfolio li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.portfolio li a {
+    color: #555;
+    margin-right: 10px;
+}
+.skills li a{
+    color: #555;
+}
+.skills li a:hover{
+    color: #337ab7;
+}
+.portfolio li a:hover {
+    color: #337ab7;
+}
+.social-media {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-media li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.social-media li:last-child {
+    margin-right: 0;
+}
+
+.contact-list {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list li a {
+    color: #555;
+}
+
+.contact-list li a:hover {
+    color: #337ab7;
+}
+.blog-articles li a{
+color: #555;
+}
+.blog-articles li a:hover{
+    color: #337ab7;
+}
+footer p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tile {
+    background-color: #f8f9fa; /* Light gray background color */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the tiles */
+    margin-bottom: 20px; /* Spacing between tiles */
+}
+
+/* Ensure Footer Stays at the Bottom */
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f9fa; /* Light gray background color */
+    padding: 10px 0; /* Spacing inside the footer */
+    border-top: 1px solid #ccc; /* Gray border on top */
+}
+
+/* Additional Styling for Footer Links */
+footer a {
+    color: #555; /* Dark gray color for links */
+    margin-right: 10px; /* Spacing between links */
+}
+
+footer a:hover {
+    color: #337ab7; /* Blue color on hover */
+}
+.container {
+    padding-bottom: 60px;
+}
+.testimonial {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.speech-bubble {
+    position: relative;
+    background-color: antiquewhite;
+    border-radius: 10px; 
+    padding: 20px; 
+}
+
+.speech-bubble:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #f1f1f1; 
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -20px; 
+}
+
+.speech-bubble p {
+    margin: 0; 
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; 
+}
+#testimonial-giver{
+    font-style: italic;
+    font-size: 1.2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
