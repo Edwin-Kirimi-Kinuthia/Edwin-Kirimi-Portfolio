@@ -82,69 +82,62 @@
         <h2>Personal Attributes</h2>
         <p>With a strong work ethic, attention to detail, and a commitment to continuous learning, I am driven by a genuine passion for making a positive impact. My ability to think critically, solve complex problems, and adapt to dynamic environments makes me a valuable asset in any team or project. Additionally, my excellent communication skills enable me to collaborate effectively with diverse stakeholders.</p>
     </div>
-import React, { useState, useEffect } from 'react';
-
-const SkillsSection = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const skills = [
-    { name: "Health Informatics (Health IT)", percent: 70, color: "from-blue-500 to-purple-500" },
-    { name: "Research and Data Analysis", percent: 90, color: "from-emerald-500 to-teal-500" },
-    { name: "Computer Programming Languages", percent: 70, color: "from-indigo-500 to-blue-500" },
-    { name: "Computer Packages", percent: 100, color: "from-violet-500 to-purple-500" }
-  ];
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      },
-      { threshold: 0.1 }
-    );
-
-    const element = document.getElementById('skills-section');
-    if (element) {
-      observer.observe(element);
-    }
-
-    return () => {
-      if (element) {
-        observer.unobserve(element);
-      }
-    };
-  }, []);
-
-  return (
-    <div id="skills-section" className="w-full max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-8 text-gray-800">Technical Skills</h2>
-      <div className="space-y-6">
-        {skills.map((skill, index) => (
-          <div key={index} className="space-y-2">
-            <div className="flex justify-between items-center">
-              <span className="text-sm font-medium text-gray-700">{skill.name}</span>
-              <span className="text-sm font-medium text-gray-700">{skill.percent}%</span>
-            </div>
-            <div className="h-4 bg-gray-200 rounded-full overflow-hidden">
-              <div 
-                className={`h-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out rounded-full`}
-                style={{
-                  width: isVisible ? `${skill.percent}%` : '0%',
-                  transform: isVisible ? 'translateX(0)' : 'translateX(-100%)',
-                }}
-              >
-                <div className="h-full w-full opacity-30 animate-pulse" />
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default SkillsSection;
+</section>
+<section id="skills" class="skills tile">
+  <div class="container">
+      <h2>Skills</h2>
+      <body>
+        <h3>Technical Skills:</h3>
+        <ul class="skills-list">
+            <li>
+                <span class="skill-name">Health Informatics (Health IT)<a href="https://www.coursera.org/account/accomplishments/verify/PKYZPE98AK9C?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank"> View Certificate</a></span>
+                <div class="progress-circle" data-percent="70">
+                    <span class="progress-left">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">70%</div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">Research and Data Analysis (SPSS, DataTab, R-statistics, Nvivo, Kobo Toolbox, REDCap)</span>
+                <div class="progress-circle" data-percent="90">
+                    <span class="progress-left">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">90%</div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">Computer Programming Languages (HTML, JavaScript, CSS, Python, and SQL)<a href="https://coursera.org/share/bcb5bc7dba4c41be58f8c263d6451d8e" target="_blank"> View Certificate</a></span>
+                <div class="progress-circle" data-percent="70">
+                    <span class="progress-left">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">70%</div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">Computer Packages (MS Access, MS Word, PowerPoint, Publisher, Adobe Acrobat)</span>
+                <div class="progress-circle" data-percent="100">
+                    <span class="progress-left">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <span class="progress-right">
+                        <span class="progress-bar"></span>
+                    </span>
+                    <div class="progress-value">100%</div>
+                </div>
+            </li>
+        </ul> 
       <h3>Soft Skills:</h3>
       <ul>
         <li>Communication: Effective verbal and written communication skills, adept at conveying ideas clearly and facilitating productive discussions.</li>
