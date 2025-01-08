@@ -3,254 +3,416 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edwin Kirimi Kinuthia</title>
+    <title>Edwin Kirimi Kinuthia | Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-      <nav id="header-nav" class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="pull-left" href="index.html">
-                <div id="logo-img"><img src="images/Edwin logo.png" alt="Logo image"></div>
-            </a>
-            <div class="navbar-brand">
-              <a href="index.html"><h1>Edwin Kirimi Kinuthia</h1></a>
-              <p class="profession"><span> BscN/Researcher/Fullstack developer/Data Analyst</span></p>
+        <!-- Navbar with all contact details visible -->
+        <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#home">
+                        <img src="images/Edwin logo.png" alt="Edwin's Logo" class="logo-img">
+                        <div class="brand-text">
+                            <h1>Edwin Kirimi Kinuthia</h1>
+                            <p class="profession">MbchB | Researcher | Fullstack Developer | Data Analyst</p>
+                        </div>
+                    </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="nav-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#certificates">Certificates</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#cv">CV</a></li>
+                        <li class="contact-info visible-md visible-lg">
+                            <a href="mailto:edwinkirimikinuthia@gmail.com">
+                                <i class="fas fa-envelope"></i> edwinkirimikinuthia@gmail.com
+                            </a>
+                        </li>
+                        <li class="contact-info visible-md visible-lg">
+                            <a href="tel:+254757963762">
+                                <i class="fas fa-phone"></i> +254 757 963 762
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="collapsable-nav" class="collapse navbar-collapse">
-            <ul id="nav-list" class="nav navbar-nav navbar-right">
-              <li><a href="#certificates">Certificates</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#cv">CV</a></li>
-              <li class="hidden-xs hidden-sm"><a href="mailto:edwinkirimikinuthia@gmail.com"><span class="glyphicon glyphicon-envelope"> edwinkirimikinuthia@gmail.com </span></a></li>
-              <li class="hidden-xs hidden-sm"><a href="tel:+254757963762"><span class="glyphicon glyphicon-earphone"> 254757963762</span></a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <div class="visible-xs visible-sm">
-        <div class="container">
-          <div class="row">
-            <div id="navcontacts" class="col-xs-12">
-              <div><a href="mailto:edwinkirimikinuthia@gmail.com"><span class="glyphicon glyphicon-envelope"> edwinkirimikinuthia@gmail.com</span></a></div>
-              <div><a href="tel:+254757963762"><span class="glyphicon glyphicon-earphone"> 254757963762</span></a></div>
+        </nav>
+        <!-- Mobile Contact Info -->
+        <div class="mobile-contacts visible-xs visible-sm">
+            <div class="container">
+                <a href="mailto:edwinkirimikinuthia@gmail.com">
+                    <i class="fas fa-envelope"></i> edwinkirimikinuthia@gmail.com
+                </a>
+                <a href="tel:+254757963762">
+                    <i class="fas fa-phone"></i> +254 757 963 762
+                </a>
             </div>
-          </div>
         </div>
-      </div>
     </header>
-    <section class="about-me tile">
-      <div class="container">
-          <div class="row">
-              <div class="col-xs-12 col-sm-4">
-                  <img src="images/Edwin image.jpg" alt="edwin's professional photo" class="img-responsive about-img">
-              </div>
-              <div class="col-xs-12 col-sm-8">
-                  <blockquote>
-                      <p>"The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn." - Alvin Toffler</p>
-                      <footer>Alvin Toffler, 1928-2016</footer>
-                  </blockquote>
-                  <p>Edwin Kirimi Kinuthia is a dedicated and skilled professional with a multifaceted background encompassing medicine, research, and software development. Holding a medical degree from the esteemed University of Nairobi, Edwin has honed his expertise through hands-on experience in clinical practice at Kenyatta National Hospital, where he applied his knowledge and skills to provide exceptional patient care.</p>
-                  <div class="what-i-do">
-                      <h2>What I Do</h2>
-                      <p>As a dedicated and skilled individual, I am currently seeking opportunities to apply my knowledge and abilities in roles that align with my passion for healthcare and technology. Whether it's contributing to groundbreaking medical research, developing cutting-edge healthcare applications, or exploring freelance projects, I am eager to collaborate with organizations or clients who value excellence, innovation, and a commitment to making a positive impact.</p>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
-  <section class="career-goals tile">
-    <div class="container">
-        <h2>Career Goals and Aspirations</h2>
-        <p>My ultimate goal is to seamlessly integrate my expertise in health, medical research, and web development to create innovative solutions that revolutionize the healthcare industry. I aspire to be at the forefront of developing cutting-edge healthcare applications, leveraging emerging technologies to enhance patient care, streamline processes, and empower healthcare professionals with powerful tools and insights.</p>
-    </div>
-</section>
-<section class="personal-attributes tile">
-    <div class="container">
-        <h2>Personal Attributes</h2>
-        <p>With a strong work ethic, attention to detail, and a commitment to continuous learning, I am driven by a genuine passion for making a positive impact. My ability to think critically, solve complex problems, and adapt to dynamic environments makes me a valuable asset in any team or project. Additionally, my excellent communication skills enable me to collaborate effectively with diverse stakeholders.</p>
-    </div>
-</section>
-<section id="skills" class="skills tile">
-  <div class="container">
-      <h2>Skills</h2>
-      <body>
-        <h3>Technical Skills:</h3>
-        <ul class="skills-list">
-            <li>
-                <span class="skill-name">Health Informatics (Health IT)<a href="https://www.coursera.org/account/accomplishments/verify/PKYZPE98AK9C?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank"> View Certificate</a></span>
-                <div class="progress-circle" data-percent="70">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">70%</div>
+
+    <!-- About Section with Profile -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="images/Edwin image.jpg" alt="Edwin's professional photo" class="img-responsive">
+                        </div>
+                        <div class="profile-info">
+                            <h2>Edwin Kirimi Kinuthia</h2>
+                            <p class="title">Healthcare Professional & Tech Enthusiast</p>
+                            <div class="social-links">
+                                <a href="https://github.com/Edwin-Kirimi-Kinuthia/" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/edwin-kinuthia-05bb4a305/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://wa.me/+254757963762" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <span class="skill-name">Research and Data Analysis (SPSS, DataTab, R-statistics, Nvivo, Kobo Toolbox, REDCap)</span>
-                <div class="progress-circle" data-percent="90">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">90%</div>
+                <div class="col-md-8">
+                    <div class="about-content">
+                        <blockquote>
+                            <p>"The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn."</p>
+                            <footer>Alvin Toffler, 1928-2016</footer>
+                        </blockquote>
+                        <p class="lead">Edwin Kirimi Kinuthia is a dedicated and skilled professional with a multifaceted background encompassing medicine, research, and software development. Holding a medical degree from the esteemed University of Nairobi, Edwin has honed his expertise through hands-on experience in clinical practice at Kenyatta National Hospital, where he applied his knowledge and skills to provide exceptional patient care.</p>
+                        <div class="what-i-do">
+                            <h3>What I Do</h3>
+                            <p>As a dedicated and skilled individual, I am currently seeking opportunities to apply my knowledge and abilities in roles that align with my passion for healthcare and technology. Whether it's contributing to groundbreaking medical research, developing cutting-edge healthcare applications, or exploring freelance projects, I am eager to collaborate with organizations or clients who value excellence, innovation, and a commitment to making a positive impact.</p>
+                        </div>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <span class="skill-name">Computer Programming Languages (HTML, JavaScript, CSS, Python, and SQL)<a href="https://coursera.org/share/bcb5bc7dba4c41be58f8c263d6451d8e" target="_blank"> View Certificate</a></span>
-                <div class="progress-circle" data-percent="70">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">70%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Goals Section -->
+    <section class="career-goals tile">
+        <div class="container">
+            <h2>Career Goals and Aspirations</h2>
+            <p>My ultimate goal is to seamlessly integrate my expertise in health, medical research, and web development to create innovative solutions that revolutionize the healthcare industry. I aspire to be at the forefront of developing cutting-edge healthcare applications, leveraging emerging technologies to enhance patient care, streamline processes, and empower healthcare professionals with powerful tools and insights.</p>
+        </div>
+    </section>
+
+    <!-- Personal Attributes Section -->
+    <section class="personal-attributes tile">
+        <div class="container">
+            <h2>Personal Attributes</h2>
+            <p>With a strong work ethic, attention to detail, and a commitment to continuous learning, I am driven by a genuine passion for making a positive impact. My ability to think critically, solve complex problems, and adapt to dynamic environments makes me a valuable asset in any team or project. Additionally, my excellent communication skills enable me to collaborate effectively with diverse stakeholders.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section with Circular Progress -->
+    <section id="skills" class="skills-section tile">
+        <div class="container">
+            <h2>Skills</h2>
+            <h3>Technical Skills</h3>
+            
+            <div class="skill-item">
+                <div class="skill-header">
+                    <h4>Health Informatics (Health IT)</h4>
+                    <a href="https://www.coursera.org/account/accomplishments/verify/PKYZPE98AK9C" target="_blank" class="certificate-link">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </a>
                 </div>
-            </li>
-            <li>
-                <span class="skill-name">Computer Packages (MS Access, MS Word, PowerPoint, Publisher, Adobe Acrobat)</span>
-                <div class="progress-circle" data-percent="100">
-                    <span class="progress-left">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <span class="progress-right">
-                        <span class="progress-bar"></span>
-                    </span>
-                    <div class="progress-value">100%</div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" data-percent="70">
+                        <span class="progress-text">90%</span>
+                    </div>
                 </div>
-            </li>
-        </ul> 
-      <h3>Soft Skills:</h3>
-      <ul>
-        <li>Communication: Effective verbal and written communication skills, adept at conveying ideas clearly and facilitating productive discussions.</li>
-        <li>Teamwork and Collaboration: Proven ability to work collaboratively in team environments like GitHub, contributing to shared goals and fostering a positive working atmosphere.</li>
-        <li>Problem-Solving: Strong analytical and problem-solving skills, capable of identifying challenges, developing innovative solutions, and implementing effective strategies.</li>
-        <li>Adaptability: Flexible and adaptable, able to thrive in dynamic environments and quickly learn new technologies or methodologies.</li>
-        <li>Time Management: Excellent organizational skills, adept at managing multiple tasks and priorities, and consistently meeting deadlines.</li>
-        <li>Leadership: Demonstrated leadership qualities, including the ability to inspire and motivate team members, delegate tasks effectively, and drive projects forward.</li>
-        <li>Creativity: Innovative thinker with a creative approach to problem-solving, capable of generating unique ideas and approaches.</li>
-        <li>Critical Thinking:Strong critical thinking skills, skilled at evaluating information, analyzing data, and making well-informed decisions.</li>
-        <li>Emotional Intelligence: High emotional intelligence, able to understand and manage emotions effectively, navigate interpersonal relationships, and empathize with others.</li>
-        <li>Conflict Resolution: Proficient in conflict resolution and mediation, adept at resolving disputes and fostering constructive dialogue to achieve mutually beneficial outcomes.</li>
-      </ul>
-  </div>
-</section>
-<section id="cv" class="resume-cv tile">
-    <div class="container">
-        <h2>Resume/CV</h2>
-        <p>Driven by a passion for healthcare, Edwin pursued his higher education at the esteemed University of Nairobi, one of the leading institutions in the region. There, he completed a rigorous Bachelors of medicine and bachelors of surgery (Mbchb) program, which aimed to develop highly skilled and self-directed medical professionals.
-          The medical program at the University of Nairobi is an integrated curriculum designed to equip students with comprehensive knowledge and practical skills in medical practice, administration, and education. Through a combination of theoretical coursework and hands-on clinical experiences, Edwin acquired a deep understanding of patient care, healthcare management, and leadership principles.</p>
-        <p><a href="index.html" target="_blank">Download my Resume/CV</a></p>
-    </div>
-</section>
-<section id="projects" class="portfolio tile">
-  <div class="container">
-      <h2>Portfolio</h2>
-      <ul class="list-unstyled">
-          <li>
-          <span class="glyphicon glyphicon-link"></span>
-            <a href="https://guruspyers-com.vercel.app/ " target="_blank">
-                Spyware Software
-            </a>
-        </li>
-        <li>
-          <span class="glyphicon glyphicon-link"></span>
-            <a href="https://netflixoyoutube-github-io.vercel.app/movie/Below%20her%20mouth " target="_blank">
-                Netflixo app(Nextflix clone)
-            </a>
-        </li>
-          <li>
-          <span class="glyphicon glyphicon-link"></span>
-            <a href="https://tech-trove.000webhostapp.com/index.php " target="_blank">
-                PHP traditional ecommerce shop
-            </a>
-        </li>
-        <li>
-            <span class="glyphicon glyphicon-link"></span>
-              <a href="https://colab.research.google.com/drive/1gqYJnaij3LnPC9KrCNqfj3m-Q27qA9gq?usp=drive_link" target="_blank">
-                  Datathon project
-              </a>
-          </li>
-          <li>
-            <span class="glyphicon glyphicon-link"></span>
-              <a href="https://colab.research.google.com/drive/1nFSTGyPeDqrg5v-8w44edGF-GiiMMv4V?ouid=117979845889605515789&usp=drive_link" target="_blank">
-                  Bus Company Data Analysis
-              </a>
-          </li>
-          <li>
-            <span class="glyphicon glyphicon-link"></span>
-              <a href="https://colab.research.google.com/drive/11rnpwzRWSs6JB6M1j37CheFRKDWc4rMc?usp=drive_link" target="_blank">
-                  Sample Finance Data analytics from a client
-              </a>
-          </li>
-          <li>
-            <span class="glyphicon glyphicon-link"></span>
-              <a href="https://drive.google.com/file/d/1P2H5tDvhex5zi2BR3RJaQdfYzjD7bf32/view?usp=drive_link" target="_blank">
-                  Uzima Borehole Database System
-              </a>
-          </li>
-      </ul>
-      <p>Access more projects like this including apps from my <a href="https://github.com/Edwin-Kirimi-Kinuthia" target="_blank">Github <img src="images/github.svg" alt="Github SVG icon"></a></p>
-  </div>
-</section>
-<section id="certificates" class="blog-articles tile">
-    <div class="container">
-        <h2>Certificates</h2>
-        <ul>
-            <li><a href="https://www.testdome.com/certificates/29087358f7864103973bd1e52196a40e" target="_blank">Ranked top 25% Python Public Test</a></li>
-          <li><a href="https://www.coursera.org/account/accomplishments/verify/PKYZPE98AK9C?utm_source%3Dandroid%26utm_medium%3Dcertificate%26utm_content%3Dcert_image%26utm_campaign%3Dsharing_cta%26utm_product%3Dcourse" target="_blank">Health Informatics (Health IT)</a></li>
-          <li><a href="https://coursera.org/share/bcb5bc7dba4c41be58f8c263d6451d8e" target="_blank">Computer Programming Languages (HTML, JavaScript, CSS, Python, and SQL)</a></li>
-        </ul>
-    </div>
-</section>
-<section class="testimonials tile">
-  <div class="container">
-      <h2>Testimonials</h2>
-      <div class="testimonial">
-          <div class="speech-bubble">
-              <p>"Working with Edwin was an exceptional experience. His expertise in financial data analysis helped us gain valuable insights that we couldn't have achieved on our own. He's not only knowledgeable but also professional and efficient. We highly recommend him for any data-related projects." <p id="testimonial-giver">From Fatima Alrshaardi</p></p>
-          </div>
-      </div>
-  </div>
-</section>  
-<section class="contact tile">
-  <div class="container">
-      <h2>Contact</h2>
-      <p>Are you seeking a driven, skilled professional to contribute to your healthcare or technology initiatives? Don't hesitate to reach out and explore how we can collaborate. I'm excited to discuss potential opportunities and share how my unique blend of expertise can benefit your organization or project.</p>
-      <ul class="list-unstyled contact-list">
-          <li><span class="glyphicon glyphicon-envelope"></span> <a href="mailto:edwinkirimikinuthia@gmail.com">edwinkirimikinuthia@gmail.com</a></li>
-          <li><span class="glyphicon glyphicon-earphone"></span> <a href="tel:+254757963762">+254757963762</a></li>
-          <li><span><a href="https://wa.me/+254757963762" target="_blank"><img src="images/whatsapp.svg" alt="whatsapp icon"> Whatsapp</a></span></li>
-      </ul>
-  </div>
-</section>
-<footer>
-    <div class="container">
-        <p>Additional Links: <a href="https://www.facebook.com/eduthebigfish" target="_blank"><img src="images/facebook.svg" alt="Faebook Icon">Facebook</a> <a href="https://x.com/Bigfish00001?t=AD4fte9EM8Cudvp9JhcbZQ&s=09" target="_blank"><img src="images/twitter-x.svg" alt="twitter-x icon">Twitter</a> <a href="https://github.com/Topexpert647" target="_blank"> <img src="images/github.svg" alt="Github icon">Github</a> <a href="https://www.instagram.com/edu_bigfish?igsh=Mjl5cGNiZXp3bXp6" target="_blank"> <img src="images/instagram.svg" alt="Instagram icon">instagram</a></p>
-        <p>© 2024 Edwin Kirimi Kinuthia. All rights reserved.</p>
-    </div>
-</footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            </div>
+    
+            <div class="skill-item">
+                <div class="skill-header">
+                    <h4>Research and Data Analysis</h4>
+                    <span class="tools">(SPSS, DataTab, R-statistics, Nvivo, Kobo Toolbox, REDCap)</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" data-percent="90">
+                        <span class="progress-text">90%</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill-item">
+                <div class="skill-header">
+                    <h4>Computer Programming Languages</h4>
+                    <span class="tools">(HTML, JavaScript, CSS, Python, and SQL)</span>
+                    <a href="https://coursera.org/share/bcb5bc7dba4c41be58f8c263d6451d8e" target="_blank" class="certificate-link">
+                        <i class="fas fa-certificate"></i> View Certificate
+                    </a>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" data-percent="70">
+                        <span class="progress-text">85%</span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="skill-item">
+                <div class="skill-header">
+                    <h4>Computer Packages</h4>
+                    <span class="tools">(MS Access, MS Word, PowerPoint, Publisher, Adobe Acrobat)</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" data-percent="100">
+                        <span class="progress-text">100%</span>
+                    </div>
+                </div>
+            </div>
+    
+            <h3>Soft Skills</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> Communication</li>
+                        <li><i class="fas fa-check-circle"></i> Teamwork and Collaboration</li>
+                        <li><i class="fas fa-check-circle"></i> Problem-Solving</li>
+                        <li><i class="fas fa-check-circle"></i> Adaptability</li>
+                        <li><i class="fas fa-check-circle"></i> Time Management</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul class="skill-list">
+                        <li><i class="fas fa-check-circle"></i> Leadership</li>
+                        <li><i class="fas fa-check-circle"></i> Creativity</li>
+                        <li><i class="fas fa-check-circle"></i> Critical Thinking</li>
+                        <li><i class="fas fa-check-circle"></i> Emotional Intelligence</li>
+                        <li><i class="fas fa-check-circle"></i> Conflict Resolution</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section tile">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h3>Spyware Software</h3>
+                        <p>A comprehensive tracking and monitoring solution.</p>
+                        <div class="project-links">
+                            <a href="https://guruspyers-com.vercel.app/" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h3>Netflixo App</h3>
+                        <p>A Netflix clone with modern features and responsive design.</p>
+                        <div class="project-links">
+                            <a href="https://netflixoyoutube-github-io.vercel.app/movie/Below%20her%20mouth" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h3>PHP E-commerce Shop</h3>
+                        <p>A traditional e-commerce platform built with PHP.</p>
+                        <div class="project-links">
+                            <a href="https://tech-trove.000webhostapp.com/index.php" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h3>Datathon Project</h3>
+                        <p>Data analysis and visualization project.</p>
+                        <div class="project-links">
+                            <a href="https://colab.research.google.com/drive/1gqYJnaij3LnPC9KrCNqfj3m-Q27qA9gq?usp=drive_link" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h3>Bus Company Data Analysis</h3>
+                        <p>Comprehensive data analysis for transportation sector.</p>
+                        <div class="project-links">
+                            <a href="https://colab.research.google.com/drive/1nFSTGyPeDqrg5v-8w44edGF-GiiMMv4V?ouid=117979845889605515789&usp=drive_link" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h3>Finance Data Analytics</h3>
+                        <p>Sample financial data analysis project.</p>
+                        <div class="project-links">
+                            <a href="https://colab.research.google.com/drive/11rnpwzRWSs6JB6M1j37CheFRKDWc4rMc?usp=drive_link" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="project-card">
+                        <h3>Uzima Borehole Database System</h3>
+                        <p>Database management system for water resources.</p>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1P2H5tDvhex5zi2BR3RJaQdfYzjD7bf32/view?usp=drive_link" target="_blank" class="btn btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates-section tile">
+        <div class="container">
+            <h2>Certificates</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <i class="fas fa-award"></i>
+                        <h3>Python Excellence</h3>
+                        <p>Ranked top 25% Python Public Test</p>
+                        <a href="https://www.testdome.com/certificates/29087358f7864103973bd1e52196a40e" target="_blank" class="btn btn-outline">
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <i class="fas fa-laptop-medical"></i>
+                        <h3>Health Informatics</h3>
+                        <p>Health IT Certification</p>
+                        <a href="https://www.coursera.org/account/accomplishments/verify/PKYZPE98AK9C" target="_blank" class="btn btn-outline">
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                        <p>HTML, JavaScript, CSS, Python, and SQL</p>
+                        <a href="https://coursera.org/share/bcb5bc7dba4c41be58f8c263d6451d8e" target="_blank" class="btn btn-outline">
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section tile">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <div class="testimonial-card">
+                <div class="testimonial-content">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Working with Edwin was an exceptional experience. His expertise in financial data analysis helped us gain valuable insights that we couldn't have achieved on our own. He's not only knowledgeable but also professional and efficient. We highly recommend him for any data-related projects.</p>
+                    <footer>
+                        <strong>Fatima Alrshaardi</strong>
+                        <span class="title">Data Analysis Client</span>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section tile">
+        <div class="container">
+            <h2>Let's Connect</h2>
+            <p class="lead">Are you seeking a driven, skilled professional to contribute to your healthcare or technology initiatives? Don't hesitate to reach out and explore how we can collaborate.</p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:edwinkirimikinuthia@gmail.com">edwinkirimikinuthia@gmail.com</a>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+254757963762">+254 757 963 762</a>
+                </div>
+            </div>
+    
+            <div class="social-links">
+                <a href="https://www.facebook.com/eduthebigfish" target="_blank" class="social-link facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/Bigfish00001" target="_blank" class="social-link twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://github.com/Topexpert647" target="_blank" class="social-link github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/edu_bigfish" target="_blank" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/+254757963762" target="_blank" class="social-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Edwin Kirimi Kinuthia</h3>
+                    <p>Healthcare Professional & Technology Enthusiast</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/eduthebigfish" target="_blank" class="social-link facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://x.com/Bigfish00001" target="_blank" class="social-link twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://github.com/Edwin-Kirimi-Kinuthia/" target="_blank" class="social-link github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/edu_bigfish" target="_blank" class="social-link instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2025 Edwin Kirimi Kinuthia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="scripts.js"></script>
 </body>
 </html>
