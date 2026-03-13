@@ -392,6 +392,19 @@ footer h3 {
     box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
 }
 
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+}
+
+.btn-outline:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+}
+
 /* Section Spacing */
 section {
     padding: 80px 0;
@@ -443,6 +456,70 @@ section:first-of-type {
     font-size: 3rem;
     color: #3498db;
     margin-bottom: 20px;
+}
+
+/* CV Section */
+.cv-block {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.cv-block h3 {
+    color: #3498db;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.cv-block h3 i {
+    margin-right: 8px;
+}
+
+.cv-item {
+    border-left: 3px solid #3498db;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.cv-item h4 {
+    margin-bottom: 4px;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+.cv-institution {
+    color: #3498db;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+
+.cv-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+/* Mobile contacts bar */
+.mobile-contacts {
+    background: #f8f9fa;
+    padding: 8px 0;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.mobile-contacts a {
+    color: #2c3e50;
+    text-decoration: none;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+.mobile-contacts a i {
+    color: #3498db;
+    margin-right: 4px;
 }
 
 /* Responsive Design */
