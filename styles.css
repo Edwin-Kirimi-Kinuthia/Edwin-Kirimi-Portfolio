@@ -235,24 +235,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Projects Section */
+.projects-section .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects-section .row > [class*="col-"] {
+    display: flex;
+    margin-bottom: 30px;
+}
+
 .project-card {
     background: white;
     border-radius: 15px;
     padding: 25px;
-    margin-bottom: 30px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
-    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
 }
 
+.project-card p {
+    flex: 1;
+}
+
 .project-links {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: auto;
 }
 
 /* Updated Contact Section Styles */
